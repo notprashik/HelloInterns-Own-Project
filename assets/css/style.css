@@ -291,3 +291,9 @@ header img{
     height: 40px;
     width: 40px;
 }
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
