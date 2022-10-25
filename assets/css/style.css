@@ -25,10 +25,7 @@ html{
 }
 
 header img{
-    margin: 5px;
-    height: 550px;
-    width: 98%;
-    padding: 10px;
+    width: 100%;
 }
 
 #formdiv{
@@ -41,7 +38,7 @@ header img{
 }
 
 #programcontainer{
-    border: 5px solid #B91646;
+    /* border: 5px solid #B91646; */
     margin: 20px;
     padding: 25px;
     display: flex;
