@@ -97,40 +97,68 @@
                 </div>
             </div>
         </div>
-    </div>
 
-
-
-
-
-    <div id="testimonial-container">
-        <div class="imgslide">
-            <img src="./assets/images/1.png" alt="About Us Image">
-        </div>
-
-        <div class="imgslide">
-            <img src="./assets/images/2.png" alt="About Us Image">
-        </div>
-        
-        <div class="imgslide">
-            <img src="./assets/images/3.png" alt="About Us Image">
-        </div>
-        
-        <div class="imgslide">
-            <img src="./assets/images/4.png" alt="About Us Image">
-        </div>
-        
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Carasoul -->
+        <div id="testimonial-container">
+            <div class="imgslide">
+                <img src="./assets/images/1.png" alt="About Us Image">
+            </div>
     
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
+            <div class="imgslide">
+                <img src="./assets/images/2.png" alt="About Us Image">
+            </div>
+            
+            <div class="imgslide">
+                <img src="./assets/images/3.png" alt="About Us Image">
+            </div>
+            
+            <div class="imgslide">
+                <img src="./assets/images/4.png" alt="About Us Image">
+            </div>
+            
+    
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="row">
+            <div class="col">
+                <footer id=footer>
+                    <div class="footer-heading">
+                        <h1> We are pretty much active on these social media</h1>
+                    </div>
+                
+                    <div class="social-media-icon" >
+                        <a href="https://www.instagram.com/not_prashik/" target="_blank">
+                        <img src="./assets/images/instagram.png" alt="instagram"></a>
+                
+                        <a href="https://www.gmail.com/" target="_blank">
+                        <img src="./assets/images/gmail-logo.png" alt="Gmail"></a>
+                
+                        <a href="https://www.facebook.com/" target="_blank">
+                        <img src="./assets/images/facebook.png" alt="Facebook"></a>
+                
+                        <a href="https://twitter.com/" target="_blank">
+                        <img src="./assets/images/twitter.png" alt="Twitter"></a>
+                    </div>
+                </footer>
+            </div>
         </div>
     </div>
+
+
+
+
+
+
 
     <script>
         var slideIndex = 1;
@@ -145,41 +173,20 @@
         }
         
         function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("imgslide");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
+            var i;
+            var slides = document.getElementsByClassName("imgslide");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
         }
-        </script>
-
-<footer id=footer>
-    <div class="footer-heading">
-        <h1> We are pretty much active on these social media</h1>
-    </div>
-
-    <div class="social-media-icon" >
-        <a href="https://www.instagram.com/not_prashik/" target="_blank">
-        <img src="./assets/images/instagram.png" alt="instagram"></a>
-
-        <a href="https://www.gmail.com/" target="_blank">
-        <img src="./assets/images/gmail-logo.png" alt="Gmail"></a>
-
-        <a href="https://www.facebook.com/" target="_blank">
-        <img src="./assets/images/facebook.png" alt="Facebook"></a>
-
-        <a href="https://twitter.com/" target="_blank">
-        <img src="./assets/images/twitter.png" alt="Twitter"></a>
-    </div>
-</footer>
-
+    </script>
 </body>
 </html>
